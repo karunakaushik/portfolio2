@@ -1,0 +1,52 @@
+.outerbox{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background.jpg);
+  height: 100vh;
+  flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
+    
+}
+.about_text{
+  color: white;
+  font-family: Lato;
+  font-size: 47px;    
+}
+
+.box{
+  display: flex;
+    flex-flow: column;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.cards, .card1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* width: 89%; */
+  color: white;
+  flex-wrap: wrap;
+  text-align: left;
+  font-size: px;
+}
+
+  @media screen and (max-width:768px){
+      .about_text{
+          font-size: 25px;
+      }
+      /* .outerbox{
+        height: auto;
+      } */
+      .box{
+        margin-top: 10%;
+        width: 75%;
+      }
+    
+  }

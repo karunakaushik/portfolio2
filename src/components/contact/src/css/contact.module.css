@@ -1,0 +1,22 @@
+.outerbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bg.png);
+    height: 100vh;
+   flex-direction: column;
+   background-size: cover;
+   background-attachment: fixed;
+   /* color: white; */
+}
+.labels{
+    color: white;
+}
+.button_submit{
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
