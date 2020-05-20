@@ -5,6 +5,7 @@ import styles from './src/css/main.module.css'
 // import About from '../about';
 // import Academic from '../academic';
 // import Skill from '../skill';
+import ScrollUp from './src/img/scrollup.svg'
 import About from '../about'
 import Skill from '../skill'
 import Academic from '../academic'
@@ -37,6 +38,13 @@ export default class Header extends Component{
     const push = (4)*height
     window.scroll({top: push, behavior: 'smooth'})
 }
+scrollToUp = () => {
+
+  const height = window.innerHeight;
+  const push = (0)*height;
+  window.scroll({top: push, behavior: 'smooth'});
+
+}
     render(){
         var name="Karuna";
          var last_name="Kumari Kaushik";
@@ -44,8 +52,8 @@ export default class Header extends Component{
 
         return(
           <React.Fragment>
-         <div className={styles.main_container}>
-             {/* <div className={styles.box1}> */}
+             {/* <div className={styles.navBox}> */}
+             <div className={styles.main_container}>
                   <div className={styles.outerBox}>
                           <div className={styles.box}>
                             Home
@@ -67,6 +75,7 @@ export default class Header extends Component{
                         Contacts
                          </div>
                    </div>
+                   {/* </div> */}
 
              <div className={styles.photo}>
                    <div className={styles.circle_div}>
@@ -80,15 +89,15 @@ export default class Header extends Component{
                   </div>
                    
             </div>       
-              </div>
             
-   
-         {/* </div> */}
-         {/* <About />
-         <Academic />
-         <Skill /> */}
+              </div>
+              {/* <div className={styles.scroll_div}> */}
+            <div className={styles.scrollUp} onClick={this.scrollToUp}>
+              <img className={styles.scrollimg} src={ScrollUp} alt='Scrollup' /> 
+              </div>
 
-
+                {/* </div> */}
+    
          <About />
          <Academic />
          <Skill />

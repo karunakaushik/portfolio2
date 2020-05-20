@@ -22,6 +22,7 @@
     align-items: center;
     height: 52px;
     width: 50%;
+    /* position: fixed; */
 }
 .photo{
     display: flex;
@@ -68,11 +69,24 @@
     text-decoration: none;
     color: white;
 }
-img{
-    /* padding: 6px; */
+
+.scrollimg{
+    padding: 6px;
     width: 40px;
-    /* cursor: pointer; */
+    cursor: pointer;
+
 }
+/* .navBox{
+    display: flex;
+    background: black;
+    justify-content: center;
+} */
+.scrollUp{
+    margin-top: -10vh;
+    position: fixed;
+}
+
+
 
 @media screen and (max-width:760px){
     .kkk{

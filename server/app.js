@@ -18,7 +18,7 @@ const app = express();
 // app.use(bodyParser.json());
 
 var transport = {
-    host: 'confusion-e50d4.firebaseapp.com', // Don’t forget to replace with the SMTP host of your provider
+    host: 'smtp.ethereal.email', // Don’t forget to replace with the SMTP host of your provider
     port: 587,
     auth: {
     user: creds.USER,

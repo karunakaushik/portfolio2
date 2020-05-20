@@ -17,7 +17,7 @@ export default class Contacts extends Component{
         this.handleSubmit = this.handleSubmit.bind(this); 
 
     }
-
+    
     handleInputChange(event) {        
         const target = event.target;        
         const value = target.type === 'checkbox' ? target.checked : target.value;        
@@ -29,7 +29,10 @@ export default class Contacts extends Component{
     handleSubmit(event) {        
         console.log('Current State is: ' + JSON.stringify(this.state));        
         // alert('Current State is: ' + JSON.stringify(this.state));        
-        event.preventDefault();    
+        event.preventDefault(); 
+        // this.refs.form.reset();
+ 
+        // event.target.reset();   
         
         var url = 'http://localhost:3002/send'
     fetch(url, {
@@ -47,7 +50,7 @@ export default class Contacts extends Component{
     .then((response) => {
         if (response.status === 'success'){
             alert("message sent");
-            this.resetForm()
+            // this.handleFormReset();
         }
         else if(response.status === 'fail'){
             alert("message failed to send")
@@ -56,9 +59,15 @@ export default class Contacts extends Component{
     
 
     }
+
+    // handleFormReset = () => {
+    //     this.setState(() => this.this.state)
+    //   }
+
     render() {
         return(
             <div className={styles.outerbox}>
+                Contact me
                 <form className={styles.formcontainer} onSubmit = {this.handleSubmit}>
                 <div className={styles.formbox}>
                 <label className={styles.labels}>Name : 
@@ -100,9 +109,9 @@ export default class Contacts extends Component{
                     onChange={this.handleInputChange} />
                 </label>
                 </div>
-
+              {/* <div id={styles.open}>submitted</div> */}
                <div>
-               <button className={styles.button_submit} type="submit" color="primary">                                       
+               <button className={styles.button_submit} type="submit" >                                       
                 Send Feedback                                     
                 </button>
                    </div> 

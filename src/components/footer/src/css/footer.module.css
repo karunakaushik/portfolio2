@@ -23,6 +23,9 @@
 .scrollUp{
     cursor: pointer;
 }
+.iconimg{
+    width: 40px;
+}
 @media screen and (max-width:770px){
     .icons{
         width: 100%;
