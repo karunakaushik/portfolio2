@@ -10,6 +10,7 @@ export default class Contacts extends Component{
         this.state = {
             name : '',
             email : '',
+            subject: '',
             message : ''
         
         }
@@ -67,56 +68,87 @@ export default class Contacts extends Component{
     render() {
         return(
             <div className={styles.outerbox}>
-                Contact me
+                <div className={styles.innercontainer}>
+                <p className={styles.contactheading}>Contact ---------- </p> 
+                <h1 className={styles.contactmetext}>
+                    CONTACT ME
+                </h1>
+                <div className={styles.row1}>
+                   <div className={styles.address}>
+                       <p>MY Address</p>
+                   </div>
+                   <div className={styles.socialprofile}>
+                       <p>My Social Profile</p>
+                   </div>
+                </div>
+                <div className={styles.row2}>
+                    <div className={styles.emailMe}>
+                        <p>Email Me</p>
+                    </div>
+                    <div className={styles.callMe}>
+                        <p> Call me</p>
+                    </div>
+                </div>
+                <div className={styles.row3}>
                 <form className={styles.formcontainer} onSubmit = {this.handleSubmit}>
                 <div className={styles.formbox}>
-                <label className={styles.labels}>Name : 
+                    <div className={styles.contactFormRow1_1}>
+                    {/* <label className={styles.labels}>Name :  */}
                     <input type = "text"
+                    className={styles.fullname}
                     id='name'
                     name = 'name'
-                    placeholder = "Fullname"
+                    placeholder = "Your name"
                     value = {this.state.name}
                     onChange={this.handleInputChange}  />
-                </label>
+                {/* </label> */}
                 </div>
-                {/* <div>
-                <label>LastName : 
-                    <input type = "text"
-                    id='lastname'
-                    name = 'lastname'
-                    placeholder = "Lastname"
-                    value = {this.state.lastname} 
-                    onChange={this.handleInputChange} />
-                </label>
-                </div> */}
-                <div >
-                <label className={styles.labels}>Email : 
-                    <input type = "text"
-                    id='email'
-                    name = 'email'
-                    placeholder = "Email"
-                    value = {this.state.email}
-                    onChange={this.handleInputChange}  />
-                </label>
+                <div className={styles.contactFormRow1_2}>
+                    {/* <label className={styles.labels}>Email :  */}
+                        <input type = "text"
+                        className={styles.email}
+                            id='email'
+                            name = 'email'
+                            placeholder = "Your email"
+                            value = {this.state.email}
+                            onChange={this.handleInputChange}  />
+                    {/* </label> */}
                 </div>
-                <div>
-                <label className={styles.labels}>Message : 
-                    <input type = "text"
-                    id='message'
-                    name = 'message'
-                    placeholder = "type here ...."
-                    value = {this.state.message} 
-                    onChange={this.handleInputChange} />
-                </label>
                 </div>
-              {/* <div id={styles.open}>submitted</div> */}
-               <div>
-               <button className={styles.button_submit} type="submit" >                                       
-                Send Feedback                                     
-                </button>
+                     
+                <div className={styles.contactFormRow2}>
+                    {/* <label className={styles.labels}>Subject :  */}
+                        <input type = "text"
+                        className={styles.subject}
+                            id='subject'
+                            name = 'subject'
+                            placeholder = "Subject"
+                            value = {this.state.subject}
+                            onChange={this.handleInputChange}  />
+                    {/* </label> */}
+                </div>
+                <div className={styles.contactFormRow3}>
+                    {/* <label className={styles.labels}>Message :  */}
+                        <textarea type = "text"
+                        className={styles.message}
+                            id='message'
+                            name = 'message'
+                            placeholder = "Type Message Here ...."
+                            value = {this.state.message} 
+                            onChange={this.handleInputChange} />
+                    {/* </label> */}
+                </div>
+               <div className={styles.buttonDiv}>
+                    <button className={styles.button_submit} type="submit" >                                       
+                        Send Feedback                                     
+                    </button>
                    </div> 
-                   </form>
+            </form>
                     
+                </div>
+
+   
+                </div>
 
             </div>
         )

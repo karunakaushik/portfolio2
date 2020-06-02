@@ -9,17 +9,167 @@
    background-attachment: fixed;
    color: white;
 }
-.labels{
+/* .labels{
     color: white;
+} */
+.buttonDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 .button_submit{
-    border: none;
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    outline: none !important;
     cursor: pointer;
 }
 /* #open{
     display: none;
 } */
+.innercontainer{
+    display: flex;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* opacity: .6; */
+    /* height: 80%; */
+    flex-direction: column;
+}
+.contactmetext{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
 
 
+}
+.contactheading{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    /* margin: 0 0 20px 0; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
 
+/* .innercontainerh2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+} */
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
 
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px
+    /* background: rgba(255, 255, 255, 0.08); */
+
+}
+.address{
+    color: #444444;
+    /* padding: 20px; */
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+}
+.socialprofile{
+    color: #444444;
+    /* padding: 20px; */
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+}
+.emailMe{
+    color: #444444;
+    /* padding: 20px; */
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+}
+.callMe{
+    color: #444444;
+    /* padding: 20px; */
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);  
+}
+.formbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.contactFormRow1_1{
+    width: 50%;
+    /* margin: 15px; */
+    padding: 15px;
+}
+.contactFormRow1_2{
+    width: 50%;
+    /*  margin: 15px; */
+    padding: 15px; 
+}
+.contactFormRow2{
+    width: 98%;
+    /* margin: 15px; */
+    padding: 15px;
+}
+.contactFormRow3{
+    width: 98%;
+    /* margin: 15px; */
+    padding: 15px;
+}
+.fullname, .email, .subject, .message{
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: #fff;
+    /* width: 100%; */
+    padding: 3px 10px 5px 12px;
+    height: 50px;
+    outline: none !important;
+}
+.message{height: 80px;}
+.message, .subject{
+    width: 98%;
+}
+.fullname, .email{
+    width: 96%;
+}
