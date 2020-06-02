@@ -4,7 +4,7 @@ import fb from './src/img/facebook.svg'
 import whatsapp from './src/img/whatsapp.svg'
 import linkedin from './src/img/linkedin.svg'
 import insta from './src/img/instagram.svg'
-import ScrollUp from './src/img/scrollup.svg'
+// import ScrollUp from './src/img/scrollup.svg'
 import git from './src/img/git.svg'
 
 export default class Footer extends Component{
