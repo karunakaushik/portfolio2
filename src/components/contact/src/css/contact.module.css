@@ -34,7 +34,7 @@
 } */
 .innercontainer{
     display: flex;
-    width: 80%;
+    width: 85%;
     background-color: rgba(0, 0, 0, 0.9);
     /* opacity: .6; */
     /* height: 80%; */
@@ -97,31 +97,43 @@
 }
 .address{
     color: #444444;
-    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    HEIGHT: fit-content;
     width: 50%;
     margin: 15px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.08);
 }
 .socialprofile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: #444444;
-    /* padding: 20px; */
+    HEIGHT: fit-content;
     width: 50%;
     margin: 15px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.08);
 }
 .emailMe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: #444444;
-    /* padding: 20px; */
+    HEIGHT: fit-content;
     width: 50%;
     margin: 15px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.08);
 }
 .callMe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: #444444;
-    /* padding: 20px; */
+    HEIGHT: fit-content;
     width: 50%;
     margin: 15px;
     padding: 15px;
@@ -135,23 +147,27 @@
 }
 .contactFormRow1_1{
     width: 50%;
-    /* margin: 15px; */
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 .contactFormRow1_2{
     width: 50%;
-    /*  margin: 15px; */
-    padding: 15px; 
+    display: flex;
+    padding: 10px;
+    justify-content: center; 
 }
 .contactFormRow2{
-    width: 98%;
-    /* margin: 15px; */
-    padding: 15px;
+    width: 97.5%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 .contactFormRow3{
-    width: 98%;
-    /* margin: 15px; */
-    padding: 15px;
+    width: 97.5%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 .fullname, .email, .subject, .message{
     border-radius: 0;
@@ -172,4 +188,53 @@
 }
 .fullname, .email{
     width: 96%;
+}
+.emailInfo , .callInfo, .addressInfo{
+    color: white;
+    margin: unset;
+}
+.socialInfo{
+    display: flex;
+    flex-direction: row;
+}
+.iconimg{
+    width: 30%;
+}
+
+@media screen and (max-width:767px){
+    .row1, .row2{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .address, .emailMe, .socialprofile, .callMe{
+        width: auto;
+        margin: 6px;
+        padding: 10px;
+    }
+    .row3{
+        padding: 7px;
+    }
+    .formbox{
+        flex-direction: column;
+        /* width: auto; */
+    }
+    .contactFormRow1_1, .contactFormRow3, .contactFormRow1_2, .contactFormRow2{
+        width: 97%;
+        padding: 5px;
+        /* padding: 10px;
+        display: flex;
+        justify-content: center; */
+    }
+    .innercontainer{
+        width: 90%;
+    }
+    .fullname, .email, .subject, .message{
+        /* width: 91%; */
+    }
+    .outerbox{
+        height: auto;
+    }
+    .iconimg{
+        width: 35%;
+    }
 }

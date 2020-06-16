@@ -1,6 +1,10 @@
 import React ,{Component} from 'react'
 import styles from './src/css/contact.module.css'
-
+import fb from './src/img/facebook.svg'
+import whatsapp from './src/img/whatsapp.svg'
+import linkedin from './src/img/linkedin.svg'
+import insta from './src/img/instagram.svg'
+import git from './src/img/git.svg'
 
 export default class Contacts extends Component{
 
@@ -75,18 +79,33 @@ export default class Contacts extends Component{
                 </h1>
                 <div className={styles.row1}>
                    <div className={styles.address}>
-                       <p>MY Address</p>
+                       <p style={{margin:"3px"}}> My Address</p>
+                       <p className={styles.addressInfo}>
+                           Aurangabad, BIHAR
+                       </p>
                    </div>
                    <div className={styles.socialprofile}>
-                       <p>My Social Profile</p>
+                       <p style={{margin:"3px"}}>My Social Profile</p>
+                       <div className={styles.socialInfo}>
+                           <div className={styles.icon}><a href='https://www.facebook.com/karuna.kumari.14268769' target='blank'> <img className={styles.iconimg} src= {fb} alt="fb"></img></a></div>
+                           {/* <div className={styles.icon}><a href='https://web.whatsapp.com' target='blank'><img className={styles.iconimg} src= {whatsapp} alt="whatsapp"></img></a></div> */}
+                           <div className={styles.icon}> <a href='https://github.com/karunakaushik' target='blank'><img className={styles.iconimg} src= {git} alt="git"></img></a></div>
+                           <div className={styles.icon}><a href='https://www.instagram.com/_k_k_k_22/' target='blank'> <img className={styles.iconimg} src= {insta} alt="insta"></img></a></div>
+                           <div className={styles.icon}><a href='https://www.linkedin.com/in/karuna-kumari-a15178177/' target='blank'> <img className={styles.iconimg} src= {linkedin} alt="linkedin"></img></a></div>
+                           
+                        </div>
                    </div>
                 </div>
                 <div className={styles.row2}>
                     <div className={styles.emailMe}>
-                        <p>Email Me</p>
+                        <p style={{margin:"3px"}}>Email Me</p>
+                        <p className={styles.emailInfo}>
+                            kkaushik@bt.iitr.ac.in
+                        </p>
                     </div>
                     <div className={styles.callMe}>
-                        <p> Call me</p>
+                        <p style={{margin:"3px"}}> Call me</p>
+                        <p className={styles.callInfo}>9027493916</p>
                     </div>
                 </div>
                 <div className={styles.row3}>
