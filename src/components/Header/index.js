@@ -4,7 +4,6 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import './nav.css'
 import NavIcon from './menu.svg'
 import { Navbar, NavbarToggler,Nav,  NavbarBrand, Collapse, NavItem , NavLink} from 'reactstrap'
-import { Link } from 'react-router-dom';
 export default class NavBar extends Component {
   constructor(props) {
     super(props);

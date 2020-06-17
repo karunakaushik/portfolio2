@@ -11,7 +11,7 @@ import Skill from '../skill'
 import Academic from '../academic'
 import Contacts from '../contact'
 import Footer from '../footer'
-import NavBar from '../Header'
+// import NavBar from '../Header'
 
 
 export default class Header extends Component{

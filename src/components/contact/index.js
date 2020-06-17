@@ -1,7 +1,7 @@
 import React ,{Component} from 'react'
 import styles from './src/css/contact.module.css'
 import fb from './src/img/facebook.svg'
-import whatsapp from './src/img/whatsapp.svg'
+// import whatsapp from './src/img/whatsapp.svg'
 import linkedin from './src/img/linkedin.svg'
 import insta from './src/img/instagram.svg'
 import git from './src/img/git.svg'
