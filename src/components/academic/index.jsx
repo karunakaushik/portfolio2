@@ -9,10 +9,10 @@ export default class Academic extends Component{
             <div className={styles.container}>
                <div className={styles.box}> 
                 <h1 className={styles.acad_text}>
-                        Academics
+                        Academics/Achievements
                  </h1>
-                </div>
-
+                
+                 <br />
               {/* <div className={styles.skill_text2}> */}
               <div className={styles.infoAcad}> 
                     {Acads_info.map((acads ,index) =>{
@@ -27,7 +27,7 @@ export default class Academic extends Component{
              
                     }
               </div>
-                 
+              </div>
               </div>
 
             

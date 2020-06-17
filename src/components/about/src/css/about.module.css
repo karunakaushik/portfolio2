@@ -19,25 +19,43 @@
 .box{
   display: flex;
     flex-flow: column;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     text-align: center;
 }
 
 
 
-.cards, .card1{
+.cards{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 100%;
+  color: white;
+  text-align: left;
+  align-items: flex-start;
+  font-size: px;
+}
+.card1{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   /* width: 89%; */
   color: white;
-  flex-wrap: wrap;
   text-align: left;
   font-size: px;
 }
+/* .bullet{
+width: 15%;
+display: flex;
+    align-items: self-end;
+    justify-content: center
+}
+.bullet img{
+  width: 30%;
+} */
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:767px){
       .about_text{
           font-size: 25px;
       }
@@ -48,5 +66,8 @@
         margin-top: 10%;
         width: 75%;
       }
-    
+    .outerbox{
+      height: fit-content;
+    padding: 15px;
+    }
   }

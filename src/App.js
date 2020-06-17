@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Loadable from 'react-loadable'
 import Loader from 'react-loader'
-import NavBar from './components/mohnish';
 // import LoaderComponent from './components/common/loader/Loader'
 // import Header from './components/main/index'
 // import About from './components/about/index'
@@ -59,9 +58,7 @@ export default class App extends React.Component {
                   </React.Fragment>
               </Switch>
           </BrowserRouter>
-          // <div>
-          //   <NavBar />
-          // </div>
+          
       )
   }
 }

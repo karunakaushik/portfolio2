@@ -8,7 +8,7 @@ export default class Acads extends React.Component{
         return(
             <div className={styles.info_container}>
                 <div className={styles.details}>
-                    {this.props.question}  :  {this.props.answer}
+                    {this.props.question}   {this.props.answer}
                 </div>
             </div>
 

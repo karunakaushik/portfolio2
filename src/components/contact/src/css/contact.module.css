@@ -232,7 +232,8 @@
         /* width: 91%; */
     }
     .outerbox{
-        height: auto;
+        height: fit-content;
+        padding: 15px;
     }
     .iconimg{
         width: 35%;

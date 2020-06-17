@@ -11,6 +11,7 @@ import Skill from '../skill'
 import Academic from '../academic'
 import Contacts from '../contact'
 import Footer from '../footer'
+import NavBar from '../Header'
 
 
 export default class Header extends Component{
@@ -75,11 +76,13 @@ scrollToUp = () => {
                         Contacts
                          </div>
                    </div>
-                   {/* </div> */}
+
+                  {/* <div className={styles.navBar}>
+                    <NavBar />
+                  </div> */}
 
              <div className={styles.photo}>
                    <div className={styles.circle_div}>
-                   {/* <img className={styles.kkk} src= {kaushik} alt='kkk'></img> */}
                      <p className={styles.text_name}>
                         {name} {last_name}
                     </p>

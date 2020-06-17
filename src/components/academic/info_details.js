@@ -6,6 +6,12 @@ export const Acads_info=
     },
     {
         info: 'B.Tech(Biotechnology),IIT Roorkee',
-        detail: 'C.G.P.A = 7.044' 
+        detail: 'C.G.P.A = 7.147' 
+    },{
+        info:"Awarded by IITR Heritage Foundation Fund 2019",
+        detail: ''
+    },
+    {
+        info:"Awarded by Dr. Rajendra Prasad Schoolarship 2017  "
     }
 ]

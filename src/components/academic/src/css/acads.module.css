@@ -14,12 +14,10 @@
     
 }
 .box{
-  display: flex;
-  flex-flow: column;
-  /* width: 50%;
-  justify-content: center;
-  text-align: center;
-     */
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    align-items: center;
 }
 .acad_text{
     color: white;
@@ -39,9 +37,13 @@
 
 @media screen and (max-width:770px){
     .acad_text{
-        font-size: 35px;
+        font-size: 24px;
     }
     .box{
         height: fit-content;
+    }
+    .container{
+        height: fit-content;
+        padding-top: 10px;
     }
 }

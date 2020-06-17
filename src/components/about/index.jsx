@@ -21,7 +21,7 @@ export default class About extends Component{
                <h1 className={styles.about_text}>
                      ABOUT/EXPERIENCE
                  </h1>
-              
+                <br />
                 <div className={styles.cards}>
                 <div className={styles.card1}> {user.info1}</div><br />
                 <div className={styles.card1}>{user.info2} </div><br />

@@ -85,6 +85,9 @@
     margin-top: -10vh;
     position: fixed;
 }
+.navbar{
+    display: none;
+}
 
 
 
@@ -99,6 +102,15 @@
     .outerBox{
         font-size: 15px;
         width: 100%;
+    }
+    /* .outerBox{
+        display: none;
+    } */
+    .scrollimg{
+        width: 15%;
+    }
+    .navbar{
+        display: none;
     }
    
 }
