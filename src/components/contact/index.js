@@ -91,7 +91,7 @@ export default class Contacts extends Component{
                            {/* <div className={styles.icon}><a href='https://web.whatsapp.com' target='blank'><img className={styles.iconimg} src= {whatsapp} alt="whatsapp"></img></a></div> */}
                            <div className={styles.icon}> <a href='https://github.com/karunakaushik' target='blank'><img className={styles.iconimg} src= {git} alt="git"></img></a></div>
                            <div className={styles.icon}><a href='https://www.instagram.com/_k_k_k_22/' target='blank'> <img className={styles.iconimg} src= {insta} alt="insta"></img></a></div>
-                           <div className={styles.icon}><a href='https://www.linkedin.com/in/karuna-kumari-a15178177/' target='blank'> <img className={styles.iconimg} src= {linkedin} alt="linkedin"></img></a></div>
+                           <div className={styles.icon}><a href='https://www.linkedin.com/in/karuna-kumari-kaushik-a15178177/' target='blank'> <img className={styles.iconimg} src= {linkedin} alt="linkedin"></img></a></div>
                            
                         </div>
                    </div>
