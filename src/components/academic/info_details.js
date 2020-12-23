@@ -6,7 +6,7 @@ export const Acads_info=
     },
     {
         info: 'B.Tech(Biotechnology),IIT Roorkee',
-        detail: 'C.G.P.A = 7.147' 
+        detail: 'C.G.P.A = 7.45' 
     },{
         info:"Awarded by IITR Heritage Foundation Fund 2019",
         detail: ''

@@ -48,11 +48,11 @@ export default class App extends React.Component {
               <Switch>
                   <React.Fragment>
                       
-                      <Route path="/about" component={About}/>
-                      <Route path="/skill" component={Skill}/>
-                      <Route exact path="/" component={HomeIndex} />
-                      <Route path="/acads" component={Academic}/>
-                      <Route path="/contact" component={Contact}/>
+                      {/* <Route path="/about" component={About}/>
+                      <Route path="/skill" component={Skill}/> */}
+                      <Route exact path="/portfolio2" component={HomeIndex} />
+                      {/* <Route path="/acads" component={Academic}/>
+                      <Route path="/contact" component={Contact}/> */}
 
 
                   </React.Fragment>

@@ -12,7 +12,9 @@ export default class About extends Component{
              info3:'I am interested in web-development and also in web designing.',
              info4:'Member of NRS(NGO Relation and Sponsorship, IIT Roorkee) and RAA(Rashtriya Avishkar Abhiyan).',
              info5:'Secured fourth state Rank and first rank in district in intermediate board(I.Sc Bihar Board 2017).',
-             info6:'Awarded by IIT Roorkee Heritage Foundation Fund 2019.'
+             info6:'Awarded by IIT Roorkee Heritage Foundation Fund 2019.',
+             info7:'I have done summer internship in web development during 2nd Year summer vacation',
+            //  info8:'I have done a '
          }
 
         return(
@@ -28,7 +30,8 @@ export default class About extends Component{
                 <div className={styles.card1}>{user.info3}</div><br />
                 <div className={styles.card1}>{user.info4}</div><br />
                 <div className={styles.card1}>{user.info5}</div><br />
-                <div className={styles.card1}>{user.info6}</div>
+                <div className={styles.card1}>{user.info6}</div><br />
+                <div className={styles.card1}>{user.info7}</div>
 
                </div> 
                </div>

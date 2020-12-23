@@ -11,13 +11,14 @@ export default class Skill extends Component{
                  </h1>
                 </div>
 
-              {/* <div className={styles.skill_text2}> */}
               <div className={styles.skills}> 
-              {/* <ul>
+              <ul>
                       <li>HTML</li>
                       <li>  CSS </li>
+                      <li>  CPP </li>
+                      <li>  Java Script </li>
                        <li> React Js </li>
-                         <li>MongoDB </li>
+                         <li>MySQL </li>
                          <li>Node js</li>
                              <li>Ms Office</li>
                             <li>Adobe Illustrator</li>
@@ -25,15 +26,11 @@ export default class Skill extends Component{
                            <li>Git</li>
                            <li>Python</li>
                   
-                  </ul> */}
-                  HTML, CSS  <br />
-                  ReactJs, MongoDB, Node Js <br />
-                  Ms Office, Git, Python, Data Visulization
+                  </ul>
               </div>
                  
               </div>
 
-            //    {/* </div> */}
 
             
         )
