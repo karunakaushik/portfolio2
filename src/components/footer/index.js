@@ -27,7 +27,7 @@ export default class Footer extends Component{
                     {/* <div className="icon"> <a href='#' target='blank'><img className="icon" src= {phone}></img></a></div> */}
                      <div className={styles.icon}> <a href='https://github.com/karunakaushik' target='blank'><img className={styles.iconimg} src= {git} alt="git"></img></a></div>
                    <div className={styles.icon}><a href='https://www.instagram.com/_k_k_k_22/' target='blank'> <img className={styles.iconimg} src= {insta} alt="insta"></img></a></div>
-                   <div className={styles.icon}><a href='https://www.linkedin.com/in/karuna-kumari-a15178177/' target='blank'> <img className={styles.iconimg} src= {linkedin} alt="linkedin"></img></a></div>
+                   <div className={styles.icon}><a href='https://www.linkedin.com/in/karuna-kumari-kaushik-a15178177/' target='blank'> <img className={styles.iconimg} src= {linkedin} alt="linkedin"></img></a></div>
                     </div> 
                     <br />
                     <div className={styles.email}>
